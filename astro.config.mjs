@@ -6,20 +6,17 @@ import starlight from '@astrojs/starlight';
 export default defineConfig({
 	integrations: [
 		starlight({
-			title: 'My Docs',
+			title: 'Modpack',
 			social: {
-				github: 'https://github.com/withastro/starlight',
+				github: 'https://github.com/takoyakidath/modpack-docs',
 			},
 			sidebar: [
 				{
 					label: 'Guides',
-					items: [
-						// Each item here is one entry in the navigation menu.
-						{ label: 'Example Guide', slug: 'guides/example' },
-					],
+					autogenerate: { directory: 'guides' },
 				},
 				{
-					label: 'Reference',
+					label: 'Main Chapter',
 					autogenerate: { directory: 'reference' },
 				},
 			],
