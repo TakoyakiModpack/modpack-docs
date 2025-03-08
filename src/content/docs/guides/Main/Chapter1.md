@@ -1,5 +1,5 @@
 ---
-title: Chapter1 : the Biginning
+title: Chapter
 description: Chapter1
 ---
 
