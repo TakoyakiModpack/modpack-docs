@@ -1,5 +1,5 @@
 ---
-title: はじめに
+title: Introduction
 description: modpackの説明など
 ---
 
