@@ -1,13 +1,15 @@
 {
-  "name": "",
+  "name": "modpack-docs",
   "type": "module",
   "version": "0.0.1",
+  "packageManager": "pnpm@8.6.0",
   "scripts": {
     "dev": "astro dev",
     "start": "astro dev",
     "build": "astro build",
     "preview": "astro preview",
     "astro": "astro"
+    
   },
   "dependencies": {
     "@astrojs/starlight": "^0.32.2",
