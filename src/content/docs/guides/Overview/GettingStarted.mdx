@@ -3,20 +3,28 @@ title: GettingStarted
 description: modpackの説明など
 ---
 import { Card, CardGrid } from '@astrojs/starlight/components';
+import { Steps } from '@astrojs/starlight/components';
 
 ### メモリ割り当て
 
 このmodpackはメモリ割り当てが最小でも4GB必要です。8GB割当すれば、よりよく遊べると思います。  
 メモリ割り当てのやり方は下の手順を参考にしてください。  
 
-    <CardGrid>
-        <Card title="公式ランチャー">
-            公式ランチャーを使用している場合は、[Minecraft Japan Wiki](https://minecraftjapan.miraheze.org/wiki/%E8%BB%BD%E9%87%8F%E5%8C%96#%E3%83%A9%E3%83%B3%E3%83%81%E3%83%A3%E3%83%BC%E8%A8%AD%E5%AE%9A)を参考にしてください。
-        </Card>
-        <Card title="外部ランチャー">
-            外部ランチャー(Prism Launcher,CurseForge)を使っている場合は、google検索などを用いて検索してください。
-        </Card>
-    </CardGrid>
+    <Card title="CurseForge Launcher">
+        <Steps>
+            1. CurseForge Launcherの設定画面を開き、左のメニューから「Minecraft」を選択する。
+            2. 「割り当て済みメモリ」と書いてある下のつまみを調整して自分の好きなようにメモリを割り当てする。
+        </Steps>
+    </Card>
+    <Card title="Prism Launcher">
+        <steps>
+            1. Prism Launcher上部の「設定」を押し、左のメニューから「Java」を選択する。
+            2. 「General」のタブを押し、「最大メモリ割り当て」で好きなようにメモリを割り当てする。(4192 MiB = 4GB)
+        </steps>
+    </Card>
+    <Card title="その他のランチャー">
+        その他のランチャー(GDLauncherなど)を使用している場合は、Google検索などを用いて設定してください。
+    </Card>
 
 ### ランチャー
 
