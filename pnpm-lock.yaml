@@ -10,13 +10,56 @@ importers:
     dependencies:
       '@astrojs/starlight':
         specifier: ^0.32.2
-        version: 0.32.2(astro@5.4.1(rollup@4.34.9)(typescript@5.8.2))
+        version: 0.32.2(astro@5.4.1(@types/node@22.13.11)(rollup@4.34.9)(typescript@5.8.2))
       astro:
         specifier: ^5.1.5
-        version: 5.4.1(rollup@4.34.9)(typescript@5.8.2)
+        version: 5.4.1(@types/node@22.13.11)(rollup@4.34.9)(typescript@5.8.2)
       sharp:
         specifier: ^0.32.5
         version: 0.32.6
+    devDependencies:
+      '@types/acorn':
+        specifier: ^4.0.6
+        version: 4.0.6
+      '@types/cookie':
+        specifier: ^0.6.0
+        version: 0.6.0
+      '@types/debug':
+        specifier: ^4.1.12
+        version: 4.1.12
+      '@types/estree':
+        specifier: ^1.0.6
+        version: 1.0.6
+      '@types/estree-jsx':
+        specifier: ^1.0.5
+        version: 1.0.5
+      '@types/hast':
+        specifier: ^3.0.4
+        version: 3.0.4
+      '@types/js-yaml':
+        specifier: ^4.0.9
+        version: 4.0.9
+      '@types/mdast':
+        specifier: ^4.0.4
+        version: 4.0.4
+      '@types/mdx':
+        specifier: ^2.0.13
+        version: 2.0.13
+      '@types/ms':
+        specifier: ^2.1.0
+        version: 2.1.0
+      '@types/nlcst':
+        specifier: ^2.0.3
+        version: 2.0.3
+      '@types/node':
+        specifier: ^22.13.10
+        version: 22.13.11
+      '@types/sax':
+        specifier: ^1.2.7
+        version: 1.2.7
+      '@types/unist':
+        specifier: ^3.0.3
+        version: 3.0.3
 
 packages:
 
@@ -543,6 +586,9 @@ packages:
 
   '@types/node@17.0.45':
     resolution: {integrity: sha512-w+tIMs3rq2afQdsPJlODhoUEKzFP1ayaoyl1CcnwtIlsVe7K7bA1NGm4s3PraqTLlXnbIN84zuBlxBWo1u9BLw==}
+
+  '@types/node@22.13.11':
+    resolution: {integrity: sha512-iEUCUJoU0i3VnrCmgoWCXttklWcvoCIx4jzcP22fioIVSdTmjgoEvmAO/QPw6TcS9k5FrNgn4w7q5lGOd1CT5g==}
 
   '@types/sax@1.2.7':
     resolution: {integrity: sha512-rO73L89PJxeYM3s3pPPjiPgVVcymqU490g0YO5n5By0k2Erzj6tay/4lr1CHAAU4JyOWd1rpQ8bCf6cZfHU96A==}
@@ -1724,6 +1770,9 @@ packages:
   uncrypto@0.1.3:
     resolution: {integrity: sha512-Ql87qFHB3s/De2ClA9e0gsnS6zXG27SkTiSJwjCc9MebbfapQfuPzumMIUMi38ezPZVNFcHI9sUIepeQfw8J8Q==}
 
+  undici-types@6.20.0:
+    resolution: {integrity: sha512-Ny6QZ2Nju20vw1SRHe3d9jVu6gJ+4e3+MMpqu7pqE5HT6WsTSlce++GQmK5UXS8mzV8DSYHrQH+Xrf2jVcuKNg==}
+
   unified@11.0.5:
     resolution: {integrity: sha512-xKvGhPWw3k84Qjh8bI3ZeJjqnyadK+GEFtazSfZv/rKeTkTjOJho6mFqh2SM96iIcZokxiOpg78GazTSg8+KHA==}
 
@@ -1966,12 +2015,12 @@ snapshots:
     transitivePeerDependencies:
       - supports-color
 
-  '@astrojs/mdx@4.1.0(astro@5.4.1(rollup@4.34.9)(typescript@5.8.2))':
+  '@astrojs/mdx@4.1.0(astro@5.4.1(@types/node@22.13.11)(rollup@4.34.9)(typescript@5.8.2))':
     dependencies:
       '@astrojs/markdown-remark': 6.2.0
       '@mdx-js/mdx': 3.1.0(acorn@8.14.0)
       acorn: 8.14.0
-      astro: 5.4.1(rollup@4.34.9)(typescript@5.8.2)
+      astro: 5.4.1(@types/node@22.13.11)(rollup@4.34.9)(typescript@5.8.2)
       es-module-lexer: 1.6.0
       estree-util-visit: 2.0.0
       hast-util-to-html: 9.0.5
@@ -1995,16 +2044,16 @@ snapshots:
       stream-replace-string: 2.0.0
       zod: 3.24.2
 
-  '@astrojs/starlight@0.32.2(astro@5.4.1(rollup@4.34.9)(typescript@5.8.2))':
+  '@astrojs/starlight@0.32.2(astro@5.4.1(@types/node@22.13.11)(rollup@4.34.9)(typescript@5.8.2))':
     dependencies:
-      '@astrojs/mdx': 4.1.0(astro@5.4.1(rollup@4.34.9)(typescript@5.8.2))
+      '@astrojs/mdx': 4.1.0(astro@5.4.1(@types/node@22.13.11)(rollup@4.34.9)(typescript@5.8.2))
       '@astrojs/sitemap': 3.2.1
       '@pagefind/default-ui': 1.3.0
       '@types/hast': 3.0.4
       '@types/js-yaml': 4.0.9
       '@types/mdast': 4.0.4
-      astro: 5.4.1(rollup@4.34.9)(typescript@5.8.2)
-      astro-expressive-code: 0.40.2(astro@5.4.1(rollup@4.34.9)(typescript@5.8.2))
+      astro: 5.4.1(@types/node@22.13.11)(rollup@4.34.9)(typescript@5.8.2)
+      astro-expressive-code: 0.40.2(astro@5.4.1(@types/node@22.13.11)(rollup@4.34.9)(typescript@5.8.2))
       bcp-47: 2.1.0
       hast-util-from-html: 2.0.3
       hast-util-select: 6.0.4
@@ -2424,9 +2473,13 @@ snapshots:
 
   '@types/node@17.0.45': {}
 
+  '@types/node@22.13.11':
+    dependencies:
+      undici-types: 6.20.0
+
   '@types/sax@1.2.7':
     dependencies:
-      '@types/node': 17.0.45
+      '@types/node': 22.13.11
 
   '@types/unist@2.0.11': {}
 
@@ -2469,12 +2522,12 @@ snapshots:
 
   astring@1.9.0: {}
 
-  astro-expressive-code@0.40.2(astro@5.4.1(rollup@4.34.9)(typescript@5.8.2)):
+  astro-expressive-code@0.40.2(astro@5.4.1(@types/node@22.13.11)(rollup@4.34.9)(typescript@5.8.2)):
     dependencies:
-      astro: 5.4.1(rollup@4.34.9)(typescript@5.8.2)
+      astro: 5.4.1(@types/node@22.13.11)(rollup@4.34.9)(typescript@5.8.2)
       rehype-expressive-code: 0.40.2
 
-  astro@5.4.1(rollup@4.34.9)(typescript@5.8.2):
+  astro@5.4.1(@types/node@22.13.11)(rollup@4.34.9)(typescript@5.8.2):
     dependencies:
       '@astrojs/compiler': 2.10.4
       '@astrojs/internal-helpers': 0.6.0
@@ -2526,8 +2579,8 @@ snapshots:
       unist-util-visit: 5.0.0
       unstorage: 1.15.0
       vfile: 6.0.3
-      vite: 6.2.0
-      vitefu: 1.0.6(vite@6.2.0)
+      vite: 6.2.0(@types/node@22.13.11)
+      vitefu: 1.0.6(vite@6.2.0(@types/node@22.13.11))
       which-pm: 3.0.1
       xxhash-wasm: 1.1.0
       yargs-parser: 21.1.1
@@ -4240,6 +4293,8 @@ snapshots:
 
   uncrypto@0.1.3: {}
 
+  undici-types@6.20.0: {}
+
   unified@11.0.5:
     dependencies:
       '@types/unist': 3.0.3
@@ -4324,17 +4379,18 @@ snapshots:
       '@types/unist': 3.0.3
       vfile-message: 4.0.2
 
-  vite@6.2.0:
+  vite@6.2.0(@types/node@22.13.11):
     dependencies:
       esbuild: 0.25.0
       postcss: 8.5.3
       rollup: 4.34.9
     optionalDependencies:
+      '@types/node': 22.13.11
       fsevents: 2.3.3
 
-  vitefu@1.0.6(vite@6.2.0):
+  vitefu@1.0.6(vite@6.2.0(@types/node@22.13.11)):
     optionalDependencies:
-      vite: 6.2.0
+      vite: 6.2.0(@types/node@22.13.11)
 
   web-namespaces@2.0.1: {}
 
